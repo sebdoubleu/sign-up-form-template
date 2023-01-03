@@ -1,0 +1,70 @@
+:root {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: white;
+    margin: 0;
+    font-family: "Arial";
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    height: 100vh;
+}
+.logo-section {
+    background: no-repeat url('//unsplash.it/500/1000');
+    height: 100vh;
+    position: relative;
+}
+img {
+    z-index: -1;
+}
+h1 {
+    position: absolute;
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    margin-top: 10rem;
+    padding: 1rem 0;
+    text-align: center;
+}
+.form-section {
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0 3rem;
+}
+.form-section,
+.inputs {
+    display: flex;
+    flex-direction: column;
+}
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    width: 100%;
+    padding: 4rem 0;
+}
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin: 0 1rem 1rem 0;
+}
+h4 {
+    grid-column: span 2;
+}
+.already-signed-up span {
+    color: rgb(45, 80, 45);
+}
+button {
+    background-color: rgb(45, 80, 45);
+    color: white;
+    border: 0;
+    padding: 0.7em 1.2em;
+    border-radius: 5px;
+}
