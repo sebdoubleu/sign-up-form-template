@@ -7,11 +7,11 @@ body {
     background-color: white;
     margin: 0;
     font-family: "Arial";
+    height: 100vh;
 }
 .wrapper {
     display: grid;
     grid-template-columns: 500px 1fr;
-    height: 100vh;
 }
 .logo-section {
     background: no-repeat url('//unsplash.it/500/1000');
@@ -47,13 +47,16 @@ form {
     grid-template-columns: 1fr 1fr;
     background-color: white;
     width: 100%;
-    padding: 4rem 0;
+    padding: 2rem 0;
 }
 .inputs {
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
     margin: 0 1rem 1rem 0;
+}
+input {
+    padding: 0.25rem 0;
 }
 h4 {
     grid-column: span 2;
