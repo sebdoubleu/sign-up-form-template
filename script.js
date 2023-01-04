@@ -19,3 +19,9 @@
 //     Password: Hidden
 //     Confirm Password: Hidden`);
 // });
+
+const login = document.querySelector('.already-signed-up span');
+
+login.addEventListener('click', () => {
+    alert('This is not a real form. Thanks for stopping by!')
+});

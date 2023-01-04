@@ -25,7 +25,8 @@ img {
 }
 h1 {
     position: absolute;
-    font-size: 3rem;
+    font-size: 4rem;
+    letter-spacing: 5px;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     left: 0;
@@ -91,6 +92,7 @@ h4 {
 }
 .already-signed-up span {
     color: rgb(45, 80, 45);
+    cursor: pointer;
 }
 button {
     background-color: rgb(45, 80, 45);
