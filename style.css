@@ -74,7 +74,7 @@ input {
     padding: 0.3rem 0;
     border-radius: 4px;
 }
-input:invalid {
+input:focus {
     border-color: rgb(170, 0, 0);
 }
 input:valid {
