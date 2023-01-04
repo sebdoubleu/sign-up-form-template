@@ -15,7 +15,8 @@ body {
     grid-template-columns: 1fr 2fr;
 }
 .logo-section {
-    background: no-repeat url('//unsplash.it/800/1000');
+    background: no-repeat url('/unsplash-image-michael-held.jpg');
+    background-size: cover;
     height: 100vh;
     position: relative;
     overflow: hidden;
