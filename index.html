@@ -18,34 +18,35 @@
             <h3>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started.</h3>
             <h3>You <i>know</i> you want to.</h3>
             <div class="form-wrapper">
-                <form action="" autocomplete="off">
+                <form action="#" autocomplete="off" id="create-account">
                     <h4>Let's do this!</h4>
                     <div class="inputs">
-                        <label for="first-name">FIRST NAME</label>
-                        <input type="text" name="first-name" id="first-name">
+                        <label for="first-name" title="please enter your name">FIRST NAME</label>
+                        <input type="text" name="first-name" id="first-name" minlength="2" required>
                     </div>
                     <div class="inputs">
                         <label for="last-name">LAST NAME</label>
-                        <input type="text" name="last-name" id="last-name">
-                    </div><div class="inputs">
+                        <input type="text" name="last-name" id="last-name" minlength="2" required>
+                    </div>
+                    <div class="inputs">
                         <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" required>
                     </div>
                     <div class="inputs">
                         <label for="phone-number">PHONE NUMBER</label>
-                        <input type="text" name="phone-number" id="phone-number">
+                        <input type="text" name="phone-number" id="phone-number" minlength="10" maxlength="11" required>
                     </div>
                     <div class="inputs">
                         <label for="password">PASSWORD</label>
-                        <input type="password" name="password" id="password">
+                        <input type="password" name="password" id="password" required>
                     </div>
                     <div class="inputs">
                         <label for="confirm-password">CONFIRM PASSWORD</label>
-                        <input type="password" name="confirm-password" id="confirm-password">
+                        <input type="password" name="confirm-password" id="confirm-password" required>
                     </div>
                 </form>
             </div>
-            <button>Create Account</button>
+            <button type="submit" form="create-account">Create Account</button>
             <div class="already-signed-up">Already have an account? <span>Log in</span></div>
         </div>
     </div>
