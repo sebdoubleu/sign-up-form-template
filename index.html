@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&display=swap" rel="stylesheet">
     <title>Odin - Sign Up Form</title>
 </head>
 <body>
@@ -16,32 +17,34 @@
         <div class="form-section">
             <h3>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started.</h3>
             <h3>You <i>know</i> you want to.</h3>
-            <form action="" autocomplete="off">
-                <h4>Let's do this!</h4>
-                <div class="inputs">
-                    <label for="first-name">FIRST NAME</label>
-                    <input type="text" name="first-name" id="first-name">
-                </div>
-                <div class="inputs">
-                    <label for="last-name">LAST NAME</label>
-                    <input type="text" name="last-name" id="last-name">
-                </div><div class="inputs">
-                    <label for="email">EMAIL</label>
-                    <input type="email" name="email" id="email">
-                </div>
-                <div class="inputs">
-                    <label for="phone-number">PHONE NUMBER</label>
-                    <input type="text" name="phone-number" id="phone-number">
-                </div>
-                <div class="inputs">
-                    <label for="password">PASSWORD</label>
-                    <input type="password" name="password" id="password">
-                </div>
-                <div class="inputs">
-                    <label for="confirm-password">CONFIRM PASSWORD</label>
-                    <input type="password" name="confirm-password" id="confirm-password">
-                </div>
-            </form>
+            <div class="form-wrapper">
+                <form action="" autocomplete="off">
+                    <h4>Let's do this!</h4>
+                    <div class="inputs">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" name="first-name" id="first-name">
+                    </div>
+                    <div class="inputs">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" name="last-name" id="last-name">
+                    </div><div class="inputs">
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="inputs">
+                        <label for="phone-number">PHONE NUMBER</label>
+                        <input type="text" name="phone-number" id="phone-number">
+                    </div>
+                    <div class="inputs">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                    <div class="inputs">
+                        <label for="confirm-password">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirm-password" id="confirm-password">
+                    </div>
+                </form>
+            </div>
             <button>Create Account</button>
             <div class="already-signed-up">Already have an account? <span>Log in</span></div>
         </div>

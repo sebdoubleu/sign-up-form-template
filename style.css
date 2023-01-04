@@ -2,21 +2,23 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    --max-width: 700px;
 }
 body {
     background-color: white;
     margin: 0;
-    font-family: "Arial";
+    font-family: "Kanit", sans-serif;
     height: 100vh;
 }
 .wrapper {
     display: grid;
-    grid-template-columns: 500px 1fr;
+    grid-template-columns: 1fr 2fr;
 }
 .logo-section {
-    background: no-repeat url('//unsplash.it/500/1000');
+    background: no-repeat url('//unsplash.it/800/1000');
     height: 100vh;
     position: relative;
+    overflow: hidden;
 }
 img {
     z-index: -1;
@@ -26,28 +28,38 @@ h1 {
     font-size: 3rem;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    width: 100%;
+    left: 0;
+    right: 0;
     margin-top: 10rem;
     padding: 1rem 0;
     text-align: center;
+}
+h3 {
+    max-width: var(--max-width);
+    font-size: 1.4rem;
 }
 .form-section {
     align-items: flex-start;
     justify-content: center;
     gap: 1rem;
     padding: 0 3rem;
+    background-color: #eee;
 }
 .form-section,
 .inputs {
     display: flex;
     flex-direction: column;
 }
+.form-wrapper {
+    background-color: white;
+    width: calc(100% + 6rem);
+    transform: translateX(-3rem);
+}
 form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: white;
-    width: 100%;
-    padding: 2rem 0;
+    padding: 1rem 3rem;
+    max-width: var(--max-width);
 }
 .inputs {
     display: flex;
@@ -56,10 +68,15 @@ form {
     margin: 0 1rem 1rem 0;
 }
 input {
-    padding: 0.25rem 0;
+    padding: 0.3rem 0;
+}
+label {
+    font-size: 0.9rem;
 }
 h4 {
     grid-column: span 2;
+    font-size: 1.4rem;
+    opacity: 0.6;
 }
 .already-signed-up span {
     color: rgb(45, 80, 45);
@@ -68,6 +85,7 @@ button {
     background-color: rgb(45, 80, 45);
     color: white;
     border: 0;
-    padding: 0.7em 1.2em;
+    padding: 1em 2em;
     border-radius: 5px;
+    font-size: 1rem;
 }
